@@ -19,7 +19,7 @@ while True:
   client_socket,addr= server_socket.accept()
   print('GOT CONNECTION FROM: ', addr)
   if client_socket:
-    vid = cv2.VideoCapture(1)
+    vid = cv2.VideoCapture(0)
     while(vid.isOpened()):
       img,frame = vid.read()
       a = pickle.dumps(frame)

@@ -1,7 +1,7 @@
 import socket,cv2,pickle,struct
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-host_ip = '172.28.0.2'
+host_ip = '192.168.56.1'
 port = 9999
 client_socket.connect((host_ip,port)) #in a tupple
 data = b""
